@@ -1,0 +1,9 @@
+{
+  "username": "muzon.demo",
+  "password": "6PlMHh9oNY0cI88KJIoTvFb7",
+  "auth": {
+    "username": "muzon.demo",
+    "salt": "PjLKz1j2zx+mgqFPlqgASQ==",
+    "passwordHash": "hNCNHeHz8DwAVut1wLjelnmH19RQTvibyDJnackC0d8="
+  }
+}
