@@ -1,0 +1,23 @@
+:root { color-scheme: light dark; --bg: #f5f6fb; --card: #fff; --text: #202333; --muted: #596176; --line: #dce1ed; --accent: #344bd1; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header, main, footer { max-width: 880px; margin: auto; padding: 24px; }
+header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { font-size: 27px; font-weight: 800; text-decoration: none; color: var(--text); }
+.brand span { color: var(--accent); }
+nav { display: flex; flex-wrap: wrap; gap: 18px; font-size: 15px; }
+main { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 32px; }
+h1 { font-size: clamp(27px, 5vw, 38px); line-height: 1.25; margin: 0 0 14px; }
+h2 { font-size: 22px; line-height: 1.4; margin: 32px 0 10px; scroll-margin-top: 20px; }
+p, ul, ol { margin: 12px 0; }
+li { margin: 8px 0; }
+a { color: var(--accent); overflow-wrap: anywhere; text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+.meta, footer { color: var(--muted); font-size: 14px; }
+.notice { padding: 16px 20px; border-left: 4px solid var(--accent); background: var(--bg); border-radius: 0 10px 10px 0; }
+.button { display: inline-block; padding: 12px 20px; margin: 8px 0; color: #fff; background: var(--accent); border-radius: 10px; text-decoration: none; font-weight: 650; }
+.cards { display: grid; gap: 16px; margin: 24px 0; }
+.cards a { display: block; padding: 20px; border: 1px solid var(--line); border-radius: 12px; font-weight: 650; }
+footer { padding-bottom: 40px; }
+@media (max-width: 600px) { header, footer { padding: 20px; } main { margin: 0 10px; padding: 24px 20px; } nav { gap: 12px; } }
+@media (prefers-color-scheme: dark) { :root { --bg: #111323; --card: #1c2033; --text: #edf0fa; --muted: #b3bdd3; --line: #353d55; --accent: #a1b2ff; } .button { color: #111323; } }
